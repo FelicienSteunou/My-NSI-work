@@ -4,3 +4,12 @@ p
  {
     color: rgb(255, 255, 255); 
 }
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('chemin/vers/votre/image.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
