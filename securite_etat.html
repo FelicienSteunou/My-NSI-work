@@ -6,35 +6,49 @@
 </head>
 <body>
     <!DOCTYPE html>
-<html>
-<head>
-    <title>Password Validation</title>
-</head>
-<body>
-    <h1>Password Validation</h1>
-    <form>
-        <label for="password">Enter Password:</label>
-        <input type="password" id="password" name="password" placeholder="Enter your password">
-        <button type="button" onclick="checkPassword()">Submit</button>
-    </form>
-    <p id="message"></p>
-
-    <script>
-        function checkPassword() {
-            var password = document.getElementById("password").value;
-            var message = document.getElementById("message");
-            
-        
-            var correctPassword = "les_produits_laitiers";
-
-            if (password === correctPassword) {
-            message.innerHTML = "Password is correct!";
-            window.location.href = "page secrete.html";
-            } else {
-                message.innerHTML = "Password is incorrect. Please try again.";
+    <html>
+    <head>
+        <title>Password Validation</title>
+        <style>
+             
+            #link-container {
+                display: none;
             }
-        }
-    </script>
+        </style>
+    </head>
+    <body>
+        <h1>Password Validation</h1><br>
+        <form>
+            <label for="password">Enter Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password">
+            <button type="button" onclick="checkPassword()">Submit</button>
+        </form>
+        <p id="message"></p>
+        
+        <!-- Container for the link -->
+        <div id="file:///Users/feliciensteunou/Downloads/My-NSI-work-main/page%20secrete.html">
+            <a href="page secrete.html">Access the New Page</a>
+        </div>
+    
+        <script>
+            function checkPassword() {
+                var password = document.getElementById("password").value;
+                var message = document.getElementById("message");
+                var linkContainer = document.getElementById("link-container");
+    
+                var correctPassword = "les_produits_laitiers";
+    
+                if (password === correctPassword) {
+                    message.innerHTML = "Password is correct!";
+                    linkContainer.style.display = "block"; // Display the link
+                } else {
+                    message.innerHTML = "Password is incorrect. Please try again.";
+                }
+            }
+        </script>
+    </body>
+    </html>
+    
  </head>
  <body>
  <a href="https://feliciensteunou.github.io/My-NSI-work/index" class="button-link">home </a>
